@@ -1,2 +1,2 @@
 # gtm-snippets
-Some scripts to put inside GTM
+Some scripts to put inside GTM for WP
