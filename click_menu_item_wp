@@ -1,0 +1,15 @@
+function() {
+
+    var el = {{Click Element}};
+    var parent = el.parentNode;
+
+    if(parent.className && parent.className.includes("page_item")){
+        var elText = el.textContent;
+        return elText;
+    } else if (el.closest(".nav-menu") && el.nodeName === "A") {
+        var elText = el.textContent;
+        return elText;
+    }
+
+    return "NA";
+}
