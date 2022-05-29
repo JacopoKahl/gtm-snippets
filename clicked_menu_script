@@ -1,0 +1,18 @@
+//Put es6 arrow func inside dom
+<script>
+var boxes = document.querySelectorAll('ul.navbar-nav > li > a');
+
+boxes.forEach(box => {
+  box.addEventListener('click', function handleClick(event) {
+    //console.log(box.textContent);
+
+    var clicked_box = box.textContent;
+
+    box.setAttribute('style', 'background-color: yellow;');
+    window.dataLayer.push({
+        'event': 'clicked_menu',
+        'clicked_link_menu': clicked_box
+        });
+  });
+});
+</script>
