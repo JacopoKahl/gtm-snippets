@@ -1,0 +1,7 @@
+//Get the previous URL where available
+
+function(){
+  var prev_url = document.referrer;
+  return prev_url;
+
+}
